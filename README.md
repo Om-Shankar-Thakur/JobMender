@@ -21,7 +21,6 @@ Nike needs a Principal Software Engineer, and a company like Atliq offers dedica
 ![Architecture Diagram](img.png)
 
 ## Installation:
-
-1. Clone the repository:
+ Clone the repository:
    ```bash
    git clone https://github.com/your-username/jobmender.git

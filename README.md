@@ -1,26 +1,43 @@
 # JobMender: AI-Powered Cold Email Generator
 
-JobMender is an AI-driven tool built using Groq, LangChain, and Streamlit that helps users generate personalized cold emails to hiring managers. It extracts job listings from a company's career page and crafts tailored emails for applying based on the job description. The tool also suggests relevant portfolio links from a vector database based on required skills.
+JobMender is an AI-driven tool built using **Groq**, **LangChain**, and **Streamlit** that assists users in crafting personalized cold emails for hiring managers. By extracting job listings from a company's career page, it automatically generates customized emails for job applications based on the job description. It also recommends relevant portfolio links from a vector database that align with the required skills.
 
 ## Key Features:
-- **Job Listing Extraction**: Input the URL of a company's careers page, and the tool automatically extracts job postings.
-- **Skills Analysis**: Extracts and identifies the key skills required for each job.
-- **Personalized Cold Email Generation**: Generates customized cold emails for each job description, targeting hiring managers.
-- **Portfolio Integration**: Suggests the most relevant portfolio links from a vector database that match the job description.
+- **Job Listing Extraction**: Enter the URL of a company's careers page, and JobMender scrapes and extracts job listings automatically.
+- **Skills Analysis**: Identifies and analyzes the key skills required for each extracted job.
+- **Personalized Cold Email Generation**: Generates tailor-made cold emails for each job posting, addressing the hiring manager directly.
+- **Portfolio Integration**: Suggests the most relevant portfolio projects from a vector database, mapped to the job description’s required skills.
+- **AI-Powered Relevance Matching**: The AI engine ensures that the email content and portfolio suggestions are highly relevant to the job requirements, improving the chances of a response.
 
 ## How It Works:
-1. **Input the URL**: Enter the career page URL of a company.
-2. **Job Listings Extraction**: The tool scrapes the page and extracts job postings, identifying the role, experience, skills, and description.
-3. **Cold Email Generation**: JobMender then crafts a personalized cold email for the hiring manager, mentioning the user's skills, company profile, and portfolio links.
-4. **Portfolio Suggestion**: Based on the skills mentioned in the job posting, the tool suggests the most relevant portfolio links sourced from the vector database.
+1. **Input Career Page URL**: Provide the URL of a company's careers page.
+2. **Job Listings Extraction**: JobMender scrapes and extracts the relevant job postings, highlighting key details such as job title, experience, skills, and the job description.
+3. **Cold Email Generation**: The tool uses AI to generate a customized cold email that introduces the user, mentions relevant skills, and includes a well-structured application targeted at the hiring manager.
+4. **Portfolio Suggestions**: Based on the identified skills, JobMender suggests relevant portfolio projects from a vector database, including links to showcase expertise directly in the email.
 
-## Imagine This Scenario:
-Nike needs a Principal Software Engineer, and a company like Atliq offers dedicated software engineers. JobMender helps Atliq's business development executive, Mohan, send a cold email to Nike’s HR department, showcasing how Atliq can meet Nike’s software development needs. It also includes links to relevant portfolio projects to further validate Atliq's expertise.
+## Example Use Case:
+Imagine a scenario where **Nike** is hiring a Principal Software Engineer, and **Atliq Technologies** offers a team of highly skilled software engineers. Using JobMender, **Mohan**, a business development executive at Atliq, can quickly craft and send a compelling cold email to Nike’s HR team, showcasing Atliq’s capabilities in software engineering. The email will include links to relevant portfolio projects that demonstrate Atliq's expertise, thereby increasing the likelihood of engagement.
 
 ## Architecture Diagram:
-![Architecture Diagram](img.png)
+The following diagram provides an overview of the architecture of JobMender, illustrating how different components interact to generate the personalized emails:
+
+![Architecture Diagram](imgs/architecture.png)
 
 ## Installation:
- Clone the repository:
+To set up and run JobMender locally, follow these steps:
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/jobmender.git
+   git clone https://github.com/your-username/JobMender.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd JobMender
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
